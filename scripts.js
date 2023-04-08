@@ -1,6 +1,6 @@
 function calculateTip(event){
     event.preventDefault();
-    let bill = document.getElementById('bill').value;
+    let bill = document.getElementById('bill'). value;
     let serviceQual = document.getElementById('serviceQual').value;
     let numOfPeople = document.getElementById('people').value;
 
@@ -26,4 +26,4 @@ document.getElementById('totalTip').style.display = "block";
 document.getElementById('totalTip').style.display = "none";
 document.getElementById('each').style.display = "none";
 
-document.getElementById('tipForm').addEventListener('submit', calculateTip);
+document.getElementById('tipsForm').addEventListener('submit', calculateTip);
