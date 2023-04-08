@@ -9,11 +9,11 @@ function calculateTip(event){
         return;
     }
 
-    if(numOfPeople == ""| numOfPeople <=1) {
+    if(numOfPeople == ""| numOfPeople <= 1) {
         numOfPeople = 1;
         document.getElementById('each').style.display = "none"
     } else{
-        document.getElementById("each").style.display = "block"
+        document.getElementById('each').style.display = "block"
     }
 
 let total = (bill * serviceQual) / numOfPeople;
@@ -26,4 +26,4 @@ document.getElementById('totalTip').style.display = "block";
 document.getElementById('totalTip').style.display = "none";
 document.getElementById('each').style.display = "none";
 
-document.getElementById('tipForm').addEventListener('submit',calculateTip);
+document.getElementById('tipForm').addEventListener('submit', calculateTip);
